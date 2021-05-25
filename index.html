@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
-<body>
+<body class="light">
 	<header>
 	    <nav>
 	      <input type="checkbox" id="check">
@@ -27,7 +27,7 @@
 	</header>
 
 <div id="page">	
-	<div class="btn-toggle">Dark</div>
+	<div class="btn-toggle"><i class="fas fa-adjust"></i></div>
 
 	<section id="apropos">
 			<a href="index.html?gestion=modifier-titre"><i id='edit' class="fa fa-edit"></i></a>
@@ -38,7 +38,7 @@
 	<section id="vehicules">
 
 
-				<a href="index.html?gestion=ajouter"><button class="newAnnonce"><i id="add" class="fa fa-plus" aria-hidden="true"></i></button></a>
+				<a href="index.html?gestion=ajouter"><button class="newAnnonce"><i id="add" class="fa fa-plus" aria-hidden="true"></i></button></a><br><br>
 		<table class="vehicules">
 			<tr>
 				<td>
@@ -194,3 +194,29 @@
 	</footer>	
 </body>
 </html>
+
+<script type="text/javascript">
+	
+const btnToggle = document.querySelector('.btn-toggle');
+
+btnToggle.addEventListener('click', () => {
+
+    const body = document.body;
+
+    if(body.classList.contains('dark')){
+
+        body.classList.add('light')
+        body.classList.remove('dark')
+        btnToggle.innerHTML = '<i class="fas fa-adjust"></i>'
+
+    } else if(body.classList.contains('light')){
+
+        body.classList.add('dark')
+        body.classList.remove('light')
+        btnToggle.innerHTML = '<i class="fas fa-adjust"></i>'
+
+    }
+
+})
+
+</script>
