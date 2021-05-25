@@ -364,6 +364,7 @@ a.footer{
 
 */
 div.btn-toggle{
+  font-size: 28px;
   position: absolute;
   top: 90px; 
   right: 15px; 
