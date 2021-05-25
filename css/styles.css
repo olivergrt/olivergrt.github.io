@@ -4,6 +4,7 @@
   text-decoration: none;
   /*list-style: none;*/
   /*box-sizing: border-box;*/
+   font-family: arial;
 }
 
 header{
@@ -13,7 +14,7 @@ header{
 
 body{
   background-color: #D5D8DC;
-/*   font-family: arial; */
+ 
 }
 
 body.dark {
