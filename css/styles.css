@@ -10,11 +10,21 @@ header{
   font-family: montserrat;
   padding-bottom: 150px;
 }
+
 body{
   background-color: #D5D8DC;
-  /*#292b2c black*/
   font-family: arial;
 }
+
+body.dark {
+    color: #fff!important;
+    background: #333!important;
+}
+body.dark .btn-toggle {
+    background: #f1f1f1;
+    color: #333;
+}
+
 textarea{
   resize: none;
   font-family: arial;
@@ -33,6 +43,7 @@ a.gestion{
 
 nav{
   background: #1F618D;
+  z-index: 1;
   height: 80px;
   width: 100%;
   box-shadow: 0px 8px 12px rgba(0,0,0,0.19);
@@ -135,6 +146,10 @@ p.apropos{
 
 }
 
+div.apropos{
+  border: 8px solid #0275d8;
+  border-radius: 30Px;
+}
 
 
 /* VEHICULES */
@@ -224,6 +239,7 @@ button.newAnnonce{
 
 button.newAnnonce:hover{
   padding: 22px;
+  margin-bottom: 30px;
 }
 
 
@@ -333,7 +349,7 @@ a.footer{
 }
 
    /*Mode dark */
-  @media (prefers-color-scheme: light){
+/*  @media (prefers-color-scheme: light){
     body{
       background-color: #D5D8DC;
       color: #333;
@@ -346,19 +362,25 @@ a.footer{
     }
   }
 
-
+*/
 div.btn-toggle{
-  position: fixed;
+  position: absolute;
   top: 90px; 
   right: 15px; 
-  width: 80px; 
-  height: 80px; 
+  width: 50px; 
+  height: 50px; 
   border-radius: 50px;
   background-color: #333; 
-  color: #FFF; 
+  color: #fff; 
   border: 1px solid #333;
   display: flex;
   justify-content: center;
   align-items: center;
   cursor: pointer;
+  transition: all ease-out 0.5s;
+} 
+div.btn-toggle:hover{
+  padding: 2px;
+  border: 3px solid #0275d8;
+
 }
