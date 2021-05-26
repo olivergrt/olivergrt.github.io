@@ -6,6 +6,10 @@
   /*box-sizing: border-box;*/
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 header{
   font-family: montserrat;
   padding-bottom: 150px;
@@ -131,7 +135,26 @@ div#page{
   width: 80%;
 }
 
+/*SUPPRIMER */
+section#supprimer{
+  background-color: #f0ad4e;
+  padding: 10px;
+  max-width: 400px;
+  border-radius: 5Px;
+}
 
+p.supprimer {
+  font-size: 18px;
+}
+button.btn-supp{
+  font-size: 16px;
+  border: 0px;
+  border-radius: 2px;
+  padding: 10px 20px;
+  background-color: red;
+  color: white; 
+  cursor: pointer;
+}
 
 /*A PROPOS*/
 
@@ -145,7 +168,8 @@ p.apropos{
 
 }
 
-div.apropos{
+div.gestion{
+  padding: 10px;
   border: 4px solid #0275d8;
   border-radius: 8px;
   box-shadow: 0px 8px 12px rgba(0,0,0,0.16);
@@ -210,14 +234,14 @@ span.prix_jour{
 @media only screen and (max-width: 795px){
 
     img.image-vehicules{
-      max-width: calc(100% - 1px);
+      max-width: calc(100%);
     }
     img.map{
       max-width: calc(100% - 1px);
     }
     span.prix_jour{
       padding: 12px;
-      font-size: 19px;
+      font-size: 18px;
     }
 }
 
@@ -253,14 +277,18 @@ button.newAnnonce:hover{
 /*MODFIFIER ANNONCES */
 
 textarea.ouicar{
+  padding: 7px 7px;
   border: 4px solid #008a83;
   background-color: #7B8988;
   color: #F0F0F0;
+  margin-bottom: 9px;
 }
 textarea.getaround{
+  padding: 7px 7px;
   border: 4px solid #61366b;
   background-color: #706772;
   color: #F1F1F1;
+  margin-bottom: 9px;
 }
 
 i#supp{
@@ -281,15 +309,17 @@ i#edit:hover{
 }
 
 @media only screen and (max-width: 600px){
+  table, td, tr{
+    display: block;
+  }
   input.modif-titre{
-    max-width: 70px;
+    max-width: 150px;
+    margin-bottom: 15px;
   }
   textarea.modif-titre, textarea.getaround,  textarea.ouicar{
-    max-width: 170px;
+    max-width: 250px; 
   }
 }
-
-
 
 /*CONTACT*/
 
@@ -316,11 +346,15 @@ img.map{
 /*Modifier Titre*/
 
 input.modif-titre{
-  padding: 11px 50px;
+  width: 356px;
+  margin-bottom: 15px;
+  padding: 11px 20px;
   border: 0px solid
 }
 textarea.modif-titre{
+  padding: 10px 10px;
   border: 0px solid;
+  margin-bottom: 9px;
 }
 input.btn-modif-titre{
   font-size: 16px;
@@ -337,6 +371,7 @@ button.modif-titre{
   border-radius: 2px;
   padding: 10px 20px;
   cursor: pointer;
+  margin-left: 15px;
 }
 
 
@@ -359,17 +394,18 @@ a.footer{
 /*  @media (prefers-color-scheme: light){
     body{
       background-color: #D5D8DC;
-      color: #333;
+      color: #161B22;
     }
   }
   @media (prefers-color-scheme: dark){
     body{
-      background-color: #333;
+      background-color: #161B22;
       color: #fff;
     }
   }
 
 */
+
 div.btn-toggle{
   position: absolute;
   font-size: 28px;
@@ -378,9 +414,9 @@ div.btn-toggle{
   width: 50px; 
   height: 50px; 
   border-radius: 50px;
-  background-color: #333; 
+  background-color: #161B22; 
   color: #fff; 
-  border: 1px solid #333;
+  border: 1px solid #161B22;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -391,4 +427,20 @@ div.btn-toggle:hover{
   padding: 2px;
   border: 3px solid #0275d8;
 
+}
+
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #1F618D;
+  bottom: 70px;
+  right: 10px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: white;
+  font-size: 22px;
 }
