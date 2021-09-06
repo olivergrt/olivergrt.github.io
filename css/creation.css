@@ -1,0 +1,36 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    background: #161B22;
+}
+table{
+    max-width: 500px;
+}
+td{
+    color: #F0F0F0;
+}
+a,li,ol,ul{
+    color: white;
+    font-size: 17px;
+}
+p{
+    font-size: 14px;
+}
+td{
+    padding: 10px;
+}
+a{
+    padding-bottom: 10px;
+}
+li{
+    padding-bottom: 3px;
+}
+a{
+    text-transform: uppercase;
+}
+hr{
+    max-width: 20%;
+}
+
+td.title{
+    padding-top: 50px;
+}
