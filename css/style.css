@@ -677,3 +677,11 @@ footer span a:hover{
         line-height: 38px;
     }
 }
+
+li.certif{
+    padding-bottom: 10px;
+    font-size: 17px;
+}
+a.certif{
+    text-decoration: underline;
+}
